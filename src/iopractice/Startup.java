@@ -16,8 +16,21 @@ public class Startup {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) throws Exception {
+        TextFileWriter textWriter = new TextFileWriter(true);
+        TextFileReader textReader = new TextFileReader();
+        Contact contact = new Contact();
+        contact.setFirstName("Ivan");
+        contact.setLastName("Khil");
+        contact.setAddress("322");
+        contact.setStreet("Assasins Ct");
+        contact.setCity("Moscow");
+        contact.setState("Idaho");
+        contact.setZip("23484");
+        textWriter.createNewFile("src", "contactList", "txt");
+        textWriter.writeFile(contact);
+        textReader.readFile();
+        textReader.readFile(2);
     }
     
 }

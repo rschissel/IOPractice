@@ -12,15 +12,7 @@ package iopractice;
  */
 public class Contact {
     private String firstName, lastName, street, address, city, state, zip;
-    public Contact(String firstName, String lastName, String street, String address, String city, String state, String zip) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.street = street;
-        this.address = address;
-        this.city = city;
-        this.state = state;
-        this.zip = zip;
-    }
+   
 
     public String getFirstName() {
         return firstName;
